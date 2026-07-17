@@ -18,35 +18,51 @@
     <nav class="sticky top-0 z-40 w-full border-b border-white/5 bg-slate-900/60 backdrop-blur-xl"><div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between"><a href="index.html" class="flex items-center gap-2"><div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-cyan-400 flex items-center justify-center text-white font-bold">M</div><span class="font-bold text-xl tracking-tight">MVS <span class="text-brand-500 font-light">Studio</span></span></a><div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300"><a href="index.html#core" class="hover:text-white transition-colors">核心特性</a><a href="tutorials.html" class="hover:text-white transition-colors">使用教程</a><a href="download.html" class="text-white transition-colors">软件下载</a><a href="faq.html" class="hover:text-white transition-colors">FAQ</a><a href="https://github.com/mojing666awa/Mo-Virtual-Singer" target="_blank" class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all border border-white/10"><i class="fab fa-github mr-1"></i> GitHub</a></div><button id="mobile-menu-btn" class="md:hidden text-white text-xl"><i class="fas fa-bars"></i></button></div><div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-xl border-b border-white/5 px-4 py-4 space-y-3 text-sm"><a href="index.html" class="block text-slate-300">首页</a><a href="tutorials.html" class="block text-slate-300">使用教程</a><a href="download.html" class="block text-white font-medium">软件下载</a><a href="faq.html" class="block text-slate-300">FAQ</a><a href="https://github.com/mojing666awa/Mo-Virtual-Singer" target="_blank" class="block text-brand-500"><i class="fab fa-github mr-2"></i>GitHub 仓库</a></div></nav>
 
     <main class="max-w-5xl mx-auto px-4 py-16 min-h-screen">
-        <div class="text-center mb-16">
+        <div class="text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">⬇️ 获取 MVS</h1>
             <p class="text-slate-400 text-lg">选择适合您平台的版本，开始创作之旅</p>
         </div>
 
-        <!-- 硬件要求提示 -->
-        <div class="max-w-2xl mx-auto mb-12 p-4 rounded-xl bg-orange-500/10 border border-orange-500/20 text-center">
-            <p class="text-sm text-orange-300"><i class="fas fa-exclamation-triangle mr-2"></i><strong>最低硬件要求：</strong>NVIDIA RTX 2060 (6GB VRAM) 或同等性能显卡。Apple Silicon M1 及以上原生支持。</p>
+        <div class="max-w-3xl mx-auto mb-12 p-4 rounded-xl bg-brand-500/10 border border-brand-500/20 text-center">
+            <p class="text-sm text-brand-300"><i class="fas fa-microchip mr-2"></i><strong>全平台 GPU 加速：</strong>NVIDIA (CUDA 12.1+) · AMD (ROCm / ZLUDA) · Apple Silicon (MPS)</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <!-- MVS v0.2 Beta -->
-            <div class="glass-panel glass-card rounded-3xl p-8 text-center transition-all duration-300 border-brand-500/30 relative overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <!-- MVS Engine -->
+            <div class="glass-panel glass-card rounded-3xl p-6 text-center transition-all duration-300 border-brand-500/30 relative overflow-hidden">
                 <div class="absolute top-0 right-0 bg-brand-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl">Latest</div>
-                <div class="w-16 h-16 mx-auto rounded-2xl bg-brand-500/20 flex items-center justify-center text-brand-500 text-3xl mb-4"><i class="fas fa-cube"></i></div>
-                <h3 class="text-2xl font-bold mb-1">MVS Engine</h3>
-                <p class="text-sm text-slate-500 mb-6">v0.2.0 Beta · 全平台通用核心包</p>
-                <a href="https://github.com/mojing666awa/Mo-Virtual-Singer/releases/tag/v0.2.0-beta" target="_blank" class="block w-full py-3 rounded-xl bg-brand-600 text-white font-bold hover:bg-brand-500 transition-all shadow-lg shadow-brand-600/30"><i class="fas fa-download mr-2"></i>下载 Release 包</a>
-                <p class="text-[10px] text-slate-600 mt-3">包含 Win/Mac/Linux 预编译二进制</p>
+                <div class="w-14 h-14 mx-auto rounded-2xl bg-brand-500/20 flex items-center justify-center text-brand-500 text-2xl mb-3"><i class="fas fa-cube"></i></div>
+                <h3 class="text-xl font-bold mb-1">MVS Engine</h3>
+                <p class="text-xs text-slate-500 mb-4">v0.2.0 Beta · 全平台核心包</p>
+                <a href="https://github.com/mojing666awa/Mo-Virtual-Singer/releases" target="_blank" class="block w-full py-2.5 rounded-xl bg-brand-600 text-white text-sm font-bold hover:bg-brand-500 transition-all shadow-lg shadow-brand-600/30"><i class="fas fa-download mr-1"></i>下载 Release</a>
             </div>
 
             <!-- OpenUtau -->
-            <div class="glass-panel glass-card rounded-3xl p-8 text-center transition-all duration-300">
-                <div class="w-16 h-16 mx-auto rounded-2xl bg-green-500/20 flex items-center justify-center text-green-400 text-3xl mb-4"><i class="fas fa-music"></i></div>
-                <h3 class="text-2xl font-bold mb-1">OpenUtau</h3>
-                <p class="text-sm text-slate-500 mb-6">推荐编辑器 · MVS 官方插件适配</p>
-                <a href="https://github.com/stakira/OpenUtau/releases/latest" target="_blank" class="block w-full py-3 rounded-xl bg-white/10 text-white font-bold hover:bg-white/20 transition-all border border-white/10"><i class="fas fa-external-link-alt mr-2"></i>前往 OpenUtau 下载</a>
-                <p class="text-[10px] text-slate-600 mt-3">第三方开源编辑器 · 免费</p>
+            <div class="glass-panel glass-card rounded-3xl p-6 text-center transition-all duration-300">
+                <div class="w-14 h-14 mx-auto rounded-2xl bg-green-500/20 flex items-center justify-center text-green-400 text-2xl mb-3"><i class="fas fa-music"></i></div>
+                <h3 class="text-xl font-bold mb-1">OpenUtau</h3>
+                <p class="text-xs text-slate-500 mb-4">推荐编辑器 · MVS 插件适配</p>
+                <a href="https://github.com/stakira/OpenUtau/releases/latest" target="_blank" class="block w-full py-2.5 rounded-xl bg-white/10 text-white text-sm font-bold hover:bg-white/20 transition-all border border-white/10"><i class="fas fa-external-link-alt mr-1"></i>前往下载</a>
             </div>
+
+            <!-- 模型导出工具 - 指向官方仓库 -->
+            <div class="glass-panel glass-card rounded-3xl p-6 text-center transition-all duration-300">
+                <div class="w-14 h-14 mx-auto rounded-2xl bg-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-3"><i class="fas fa-exchange-alt"></i></div>
+                <h3 class="text-xl font-bold mb-1">模型导出工具</h3>
+                <p class="text-xs text-slate-500 mb-4">Bert-VITS2 / VITS-Fast → MVS</p>
+                <div class="space-y-2">
+                    <a href="https://github.com/fishaudio/Bert-VITS2" target="_blank" class="block w-full py-2 rounded-xl bg-white/10 text-white text-xs font-bold hover:bg-white/20 transition-all border border-white/10"><i class="fab fa-github mr-1"></i>Bert-VITS2 官方</a>
+                    <a href="https://github.com/Plachtaa/VITS-fast-fine-tuning" target="_blank" class="block w-full py-2 rounded-xl bg-white/5 text-white text-xs font-bold hover:bg-white/10 transition-all border border-white/5"><i class="fab fa-github mr-1"></i>VITS-Fast 官方</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 导出说明 -->
+        <div class="glass-panel rounded-3xl p-8 max-w-3xl mx-auto mb-12">
+            <h3 class="text-lg font-bold mb-4 flex items-center gap-2"><i class="fas fa-info-circle text-purple-400"></i> 关于模型迁移</h3>
+            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                MVS 兼容 Bert-VITS2 与 VITS-Fast 的 checkpoint 格式。请从上方官方仓库获取对应项目的源码与导出脚本，按照其文档将模型转换为 ONNX 后，放入 MVS 的 <code class="bg-black/30 px-1 rounded text-xs">checkpoints/</code> 目录即可加载。具体转换步骤请参阅各项目的官方 README。
+            </p>
         </div>
 
         <!-- 源码构建 -->
